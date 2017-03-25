@@ -201,7 +201,7 @@ namespace Tmpa {
 			parse_(isDeclarationTile: ModifierDeclarationTiles.Contains, parseDefinition: () => parseDefinitionByDeclarationTile[declarationTile_]()); }
 		private void parseWalls_() {
 			var upY = 0;
-			var downY = 0;
+			var downY = 1;
 
 			var leftX = 0;
 			var middleX = 1;
