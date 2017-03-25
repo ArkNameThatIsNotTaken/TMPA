@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{D7059614-F69D-4EAF-83F0-4A937D61DEC3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TMPA</RootNamespace>
+    <AssemblyName>TMPA</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="PatternsApplicator.cs" />
+    <Compile Include="Pattern.cs" />
+    <Compile Include="Stamp.cs" />
+    <Compile Include="Dictionary.cs" />
+    <Compile Include="Error.cs" />
+    <Compile Include="Array.cs" />
+    <Compile Include="Index.cs" />
+    <Compile Include="OrderPreservingQueue.cs" />
+    <Compile Include="EachArray2dItem.cs" />
+    <Compile Include="ConfigurationFile.cs" />
+    <Compile Include="Count.cs" />
+    <Compile Include="CSharp.cs" />
+    <Compile Include="ConsoleApplication.cs" />
+    <Compile Include="Assembly.cs" />
+    <Compile Include="String.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="Limit2d.cs" />
+    <Compile Include="Vector2d.cs" />
+    <Compile Include="Xml.cs" />
+    <Compile Include="Map.cs" />
+    <Compile Include="NullKeyDictionary.cs" />
+    <Compile Include="ConfigurationParser.cs" />
+    <Compile Include="LegendParser.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Help.txt">
+      <LogicalName>Help</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System" />
+  </ItemGroup>
+</Project>

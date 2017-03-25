@@ -1,0 +1,10 @@
+﻿Do not use the same parameter twice.
+The first command line argument may be the argument for the input file path parameter as long as it doesn't equal any parameter name. This allows drag and drop.
+
+World file content example:
+town\town.map:X0Y0
+north\mountains.map:X0Y-1
+east\valley.map:X1Y0
+south\sea.map:X0Y1
+south\island.map:X0Y2
+west\forest.map:X-1Y0

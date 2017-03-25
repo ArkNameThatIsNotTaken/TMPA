@@ -1,0 +1,1 @@
+TMXPA.exe "%1" action:prepare
